@@ -7,6 +7,8 @@ mongoose.connect(urlDb, {
   dbName: "storegg",
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify: true,
+  useCreateIndex: true,
 });
 
 const db = mongoose.connection;

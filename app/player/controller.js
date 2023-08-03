@@ -282,7 +282,7 @@ module.exports = {
               ...payload,
               avatar: filename,
             },
-            { new: true, runValidators: true }
+            { new: true, runValidators: true, includeResultMetadata: false }
           );
 
           res.status(201).json({
@@ -304,7 +304,7 @@ module.exports = {
             _id: req.player._id,
           },
           payload,
-          { new: true, runValidators: true }
+          { new: true, runValidators: true, includeResultMetadata: false }
         );
 
         res.status(201).json({
